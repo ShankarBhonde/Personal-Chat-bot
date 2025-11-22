@@ -11,8 +11,7 @@ from langchain.prompts import PromptTemplate
 import os
 
 st.set_page_config(page_title="Document Genie", layout="wide")
-st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fwelcome-symbol-vectors&psig=AOvVaw2AOfLCXSjfeH4XX-_H1_iF&ust=1763903307244000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiotaXqhZEDFQAAAAAdAAAAABAE")
-
+st.image("https://cdn.vectorstock.com/i/1000v/59/19/handshake-symbol-sketch-style-vector-20975919.avif")
 st.markdown("""
 ## Welcome My RAG Based Chatbot 💁
 ## Document Genie: Get instant insights from your Documents
