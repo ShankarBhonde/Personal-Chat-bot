@@ -11,11 +11,13 @@ from langchain.prompts import PromptTemplate
 import os
 
 st.set_page_config(page_title="Document Genie", layout="wide")
+st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fwelcome-symbol-vectors&psig=AOvVaw2AOfLCXSjfeH4XX-_H1_iF&ust=1763903307244000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiotaXqhZEDFQAAAAAdAAAAABAE")
 
 st.markdown("""
+## Welcome My RAG Based Chatbot 💁
 ## Document Genie: Get instant insights from your Documents
 
-This chatbot is built using the Retrieval-Augmented Generation (RAG) framework, leveraging Google's Generative AI model Gemini-PRO. It processes uploaded PDF documents by breaking them down into manageable chunks, creates a searchable vector store, and generates accurate answers to user queries. This advanced approach ensures high-quality, contextually relevant responses for an efficient and effective user experience.
+This chatbot is built using the Retrieval-Augmented Generation (RAG) framework, leveraging Google's Generative AI model Gemini-2.5-flash. It processes uploaded PDF documents by breaking them down into manageable chunks, creates a searchable vector store, and generates accurate answers to user queries. This advanced approach ensures high-quality, contextually relevant responses for an efficient and effective user experience.
 
 ### How It Works
 
@@ -71,21 +73,13 @@ def user_input(user_question, api_key):
         st.error("⚠ Please upload and process PDF first.")
         return
 
-    embeddings = GoogleGenerativeAIEmbeddings(
-        model="models/text-embedding-004",
-        google_api_key=api_key
-    )
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004",google_api_key=api_key )
 
-    new_db = FAISS.load_local(
-        "faiss_index",
-        embeddings,
-        allow_dangerous_deserialization=True
-    )
+    new_db = FAISS.load_local( "faiss_index", embeddings, allow_dangerous_deserialization=True )
 
     docs = new_db.similarity_search(user_question)
     chain = get_conversational_chain()
-    response = chain({"input_documents": docs, "question": user_question},
-                     return_only_outputs=True)
+    response = chain({"input_documents": docs, "question": user_question}, return_only_outputs=True)
 
     st.write("Reply:", response["output_text"])
 
