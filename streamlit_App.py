@@ -16,18 +16,30 @@ st.set_page_config(page_title="Document Genie", layout="wide")
 st.markdown("""
 
 <style>
-.blink {
-  font-size: 35px;
-  font-weight: bold;
-  color: #00C4FF;
-  animation: blinker 1s linear infinite;
+#sticky-blink {
+    position: fixed;
+    top: 50%;                     /* middle vertically */
+    left: 50%;                    /* middle horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
 }
+
+.blink {
+    font-size: 35px;
+    font-weight: bold;
+    color: #00C4FF;
+    animation: blinker 1s linear infinite;
+}
+
 @keyframes blinker {
-  50% { opacity: 0; }
+    50% { opacity: 0; }
 }
 </style>
 
-<center><div class="blink">Welcome My RAG Chatbot 🤖</div></center>
+<div id="sticky-blink">
+    <div class="blink">Welcome My RAG Chatbot 🤖</div>
+</div>
 
 
 
