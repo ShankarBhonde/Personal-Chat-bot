@@ -15,30 +15,31 @@ st.set_page_config(page_title="Document Genie", layout="wide")
 #st.image("https://cdn.vectorstock.com/i/1000v/59/19/handshake-symbol-sketch-style-vector-20975919.avif")
 st.markdown("""
 
-<style>
 #sticky-blink {
-    position: fixed;              /* stays on top while scrolling */
-    top: 10px;                    /* distance from top */
+    position: fixed;
+    top: 0;                         /* show at very top */
     left: 50%;
     transform: translateX(-50%);
-    z-index: 9999;                /* always on top */
+    z-index: 9999;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* optional background */
 }
 
+<style>
 .blink {
-    font-size: 35px;
-    font-weight: bold;
-    color: #00C4FF;
-    animation: blinker 1s linear infinite;
+  font-size: 35px;
+  font-weight: bold;
+  color: #00C4FF;
+  animation: blinker 1s linear infinite;
 }
-
 @keyframes blinker {
-    50% { opacity: 0; }
+  50% { opacity: 0; }
 }
 </style>
 
-<div id="sticky-blink">
-    <div class="blink">Welcome My RAG Chatbot 🤖</div>
-</div>
+<center><div class="blink">Welcome My RAG Chatbot 🤖</div></center>
 
 
 
