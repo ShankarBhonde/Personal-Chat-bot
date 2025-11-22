@@ -43,7 +43,7 @@ st.markdown("""
 </style>
 
 <div id="sticky-blink">
-    <div class="blink">💁 Welcome To My RAG Chatbot 💁</div>
+    <div class="blink">💁Welcome To My RAG Chatbot 💁</div>
 </div>
 
 
