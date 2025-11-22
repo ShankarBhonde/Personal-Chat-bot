@@ -3,7 +3,7 @@
 ## Visit my Application: https://personal-chat-bot-app-using-rag-2025.streamlit.app/
 
 ## Overview 
-• Get instant insights from your Documents
+ Get instant insights from your Documents.
 This chatbot is built using the Retrieval-Augmented Generation (RAG) framework, leveraging Google's Generative AI model Gemini-2.5-flash. It processes uploaded PDF documents by breaking them down into manageable chunks, creates a searchable vector store, and generates accurate answers to user queries. This advanced approach ensures high-quality, contextually relevant responses for an efficient and effective user experience.
 
 ## How It Works
