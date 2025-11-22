@@ -27,7 +27,7 @@ st.markdown("""
     z-index: 9999;
     font-size: 25px;
     font-weight: 700;
-    color: #00C4FF;
+    color: #edf1f2;
 }
 </style>
 <div id="sticky-welcome"></div>
