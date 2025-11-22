@@ -14,10 +14,22 @@ st.set_page_config(page_title="Document Genie", layout="wide")
 #st.image("https://cdn.vectorstock.com/i/1000v/59/19/handshake-symbol-sketch-style-vector-20975919.avif")
 st.markdown("""
 
-<div style="display:flex; justify-content:center;">
-        <img src="https://cdn.vectorstock.com/i/1000v/59/19/handshake-symbol-sketch-style-vector-20975919.avif"
-             style="width:500px; height:200px; object-fit:cover;">
-    </div>
+<style>
+.slide-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00C4FF;
+  position: relative;
+  animation: slide 3s infinite;
+}
+@keyframes slide {
+  0% { left: -300px; }
+  50% { left: 0px; }
+  100% { left: -300px; }
+}
+</style>
+
+<div class="slide-text">Welcome My RAG Chatbot 🤖</div>
 
 
 
