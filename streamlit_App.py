@@ -50,7 +50,7 @@ st.markdown("""
 
 
 ##
-##
+
 ## Document Genie: Get instant insights from your Documents
 
 This chatbot is built using the Retrieval-Augmented Generation (RAG) framework, leveraging Google's Generative AI model Gemini-2.5-flash. It processes uploaded PDF documents by breaking them down into manageable chunks, creates a searchable vector store, and generates accurate answers to user queries. This advanced approach ensures high-quality, contextually relevant responses for an efficient and effective user experience.
