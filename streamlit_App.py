@@ -24,7 +24,7 @@ st.markdown("""
     z-index: 9999;
     text-align: center;
     background: rgba(0, 0, 0, 0.75);   /* ⬅ added background */
-    padding: 12px 30px;               /* spacing for good look */
+    padding: 20px 30px;               /* spacing for good look */
     border-radius: 12px;              /* curved edges */
     backdrop-filter: blur(5px);       /* glass effect */
 }
