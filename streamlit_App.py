@@ -16,6 +16,13 @@ st.set_page_config(page_title="Document Genie", layout="wide")
 st.markdown("""
 
 <style>
+body {
+    background-color: #f0d5b4;   /* Change the color */
+}
+</style>
+
+
+<style>
 #sticky-blink {
     position: fixed;
     top: 10%;                     /* middle vertically */
