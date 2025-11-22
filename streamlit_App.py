@@ -17,12 +17,11 @@ st.markdown("""
 
 <style>
 #sticky-blink {
-    position: fixed;
-    top: 50%;                     /* middle vertically */
-    left: 50%;                    /* middle horizontally */
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    text-align: center;
+    position: fixed;              /* stays on top while scrolling */
+    top: 10px;                    /* distance from top */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;                /* always on top */
 }
 
 .blink {
@@ -40,6 +39,7 @@ st.markdown("""
 <div id="sticky-blink">
     <div class="blink">Welcome My RAG Chatbot 🤖</div>
 </div>
+
 
 
 
