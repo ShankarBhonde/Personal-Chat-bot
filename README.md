@@ -1,1 +1,1 @@
-# Personal-Chat-bot
+# Personal-Chat-bot Using RAG
