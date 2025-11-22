@@ -16,6 +16,7 @@ Follow these simple steps to interact with the chatbot:
 3. Ask a Question: After processing the documents, ask any question related to the content of your uploaded documents for a precise answer.
 
 
+## Outcome generated from my application
 
 <img width="1901" height="844" alt="image" src="https://github.com/user-attachments/assets/35a74e78-975f-43c1-85ec-01f2ade77d6a" />
 <img width="1878" height="884" alt="image" src="https://github.com/user-attachments/assets/f476201a-fb50-49e6-a6ea-8a352f5b7d4e" />
