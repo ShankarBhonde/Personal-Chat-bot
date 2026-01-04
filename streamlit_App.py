@@ -1,7 +1,6 @@
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.chains.combine_documents import create_stuff_documents_chain
 
 from langchain_google_genai import (
     GoogleGenerativeAIEmbeddings,
